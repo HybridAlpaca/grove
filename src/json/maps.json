@@ -1,0 +1,38 @@
+{
+    
+    "house-1": {
+        "id": "house-1",
+        "path": "/assets/models/house-1.json",
+        "name": "House",
+        "desc": "A house.",
+        "spawn": [0, 3, 0],
+        "center": [0, 0, 0],
+        "meshData": {
+            "children": {
+                "door": {
+                    "type": "link",
+                    "location": "helmfirth",
+                    "name": "To Helmfirth"
+                }
+            }
+        }
+    },
+    "helmfirth": {
+        "id": "helmfirth",
+        "path": "/assets/models/untitled/untitled.json",
+        "name": "Helmfirth",
+        "desc": "A small village, in the pit of The Grove.",
+        "spawn": [30, 20, 30],
+        "center": [0, 20, 0],
+        "meshData": {
+            "blender": true,
+            "children": {
+                "door": {
+                    "type": "link",
+                    "location": "house-1",
+                    "name": "Door"
+                }
+            }
+        }
+    }
+}

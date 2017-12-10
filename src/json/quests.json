@@ -1,0 +1,30 @@
+{
+    "adventures": {
+        "test": {
+            "quests": ["tutorial", "betrayal"]
+        }
+    },
+    "quests": {
+        "tutorial": {
+            "id": "tutorial",
+            "name": "Tutorial",
+            "desc": "Learn the basics of the game.",
+            "listeners": ["player.move", "player.look"],
+            "onComplete": [{
+                "type": "give",
+                "target": "player",
+                "item": "doofus-helm"
+            }]
+        },
+        "betrayal": {
+            "id": "betrayal",
+            "name": "Sweet Betrayal",
+            "desc": "Kill Bert.  Leave no evidence.",
+            "listeners": [{
+                "id": "entity.kill",
+                "killer": "player"
+            }],
+            "onComplete": []
+        }
+    }
+}

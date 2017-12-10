@@ -1,0 +1,16 @@
+{
+    "bert": {
+        "id": "bert",
+        "path": "/assets/models/character-base-male/character-base-male.json",
+        "name": "Bert",
+        "desc": "Close sibling of Billy the Blue Cube.",
+        "stats": {
+            "hpMax": 70,
+            "stmMax": 70
+        },
+        "meshData": {
+            "offset": [0, -2.6, 0],
+            "scale": [0.5, 0.5, 0.5]
+        }
+    }
+}

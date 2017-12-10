@@ -1,0 +1,53 @@
+{
+    // items
+    "torch": {
+        "id": "torch",
+        "icon": "/assets/icons/torch.png",
+        "model": "/assets/models/torch/torch.json",
+        "type": "weapon",
+        "name": "Torch",
+        "desc": "A light to keep the dark at bay",
+        "slot": "hand",
+        "weight": 5,
+        "value": 3,
+        "stats": {
+            "dmg": 3,
+            "spd": 500,
+            "cooldown": 400
+        },
+        "meshData": {
+            "equipped": { // these effects are applied when the item is equipped
+                "scale": [0.3, 0.3, 0.3],
+                "particles": "Fire",
+                "light": ["#ffee55", 1, 60, 2]
+            }
+        }
+    },
+    "sword": {
+        "id": "sword",
+        "icon": "/assets/icons/one-handed-sword.png",
+        "model": "/assets/models/sword/sword.json",
+        "type": "weapon",
+        "name": "Shortsword",
+        "desc": "A small sword; handy yet light.",
+        "slot": "hand",
+        "weight": 10,
+        "value": 15,
+        "stats": {
+            "dmg": 7,
+            "spd": 1000,
+            "cooldown": 600
+        },
+        "meshData": {
+            "general": {
+                "scale": [0.12, 0.12, 0.12]
+            }
+        }
+    },
+    // misc
+    "coin": { // until we find a better name
+        "id": "coin",
+        "name": "Coin",
+        "desc": "Money. $_$"
+    }
+}

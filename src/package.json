@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-latest": "^6.24.1",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "@tweenjs/tween.js": "^17.1.1",
+    "cannon": "^0.6.2",
+    "jquery": "^3.2.1",
+    "json5-loader": "^1.0.1",
+    "postal": "^2.0.5",
+    "three": "^0.88.0"
+  }
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>The Grove - Play</title>
+    <link rel='stylesheet' href='/css/play.css'>
+</head>
+
+<body>
+    <p id='blocker' class='pointerlock'><span id='instructions' class='pointerlock'>play</span></p>
+    <span id='crosshair'><span id='crosshair-icon'>[ · ]</span><br><span id='crosshair-tooltip'></span></span>
+    <div id='gui' style='display:none;'>
+        <div id='gui-panel'>
+            <h2 id='gui-title' class='pointerlock'>HAY BABE</h2>
+            <div id='gui-content'>BIIIITCH</div>
+        </div>
+    </div>
+    <script>
+        console._warn = console.warn;
+        console._error = console.error;
+        console.warn = (warning) => {
+            if (/vec/gi.test(warning)) return;
+            if (/extension/gi.test(warning)) return;
+            console._warn(warning);
+        };
+        console.error = (err) =>
+            (/vec/gi.test(err)) || console._warn(err);
+    </script>
+    <script src='/js/vendor.min.js'></script>
+    <script src='/js/main.min.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "grove",
+  "version": "1.0.0",
+  "description": "The Grove",
+  "main": "server/index.js",
+  "author": "Seth Traman <sethtraman@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node .",
+    "dev": "node . & cd src && webpack -w"
+  },
+  "dependencies": {}
+}
